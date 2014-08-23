@@ -4,7 +4,7 @@ class RAKE {
 
 	private $stoplist = [];
 	/*
-		Takes a string with delimeter or an array as a stoplist
+		Takes a string with delimiter or an array as a stoplist
 	 */
 	public function __construct( $stoplist, $delim = ',' ) {
 		if ( is_array( $stoplist ) ) {
@@ -58,7 +58,8 @@ class RAKE {
 
 		return $phrase_list;
 	}
-	/* Get scores for individual words depending on their frequency,
+	/* 
+	 * Get scores for individual words depending on their frequency,
 	 * degree and ratio of degree/freqeuncy
 	 */
 	private function get_word_scores( $phrase_list ) {
